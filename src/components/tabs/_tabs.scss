@@ -12,15 +12,15 @@
   font-size: 1em;
   outline: none;
   &:hover {
-    color: $text;
+    color: $text-dark;
   }
   //&:focus {
   //  border-radius: 0.25em;
-  //  border: 0.125em solid $accent-focus;
+  //  border: 0.125em solid $color-accent-focus;
   //}
 }
 .cmp-tabs__tab--active {
-  color: $text;
+  color: $text-dark;
   border: none;
   &:focus {
     //border-radius: 0;

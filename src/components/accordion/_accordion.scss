@@ -27,7 +27,7 @@
   }
   &:hover {
     .cmp-accordion__title {
-      color: $text;
+      color: $text-dark;
     }
     .cmp-accordion__icon {
       &:after {
@@ -36,10 +36,10 @@
     }
   }
   &:focus {
-    border: 0.125em solid $accent-focus;
+    border: 0.125em solid $color-accent-focus;
     border-radius: 0.25em;
     .cmp-accordion__title {
-      color: $text;
+      color: $text-dark;
     }
   }
 }
@@ -56,7 +56,7 @@
     border-bottom-color: $grey1;
     border-radius: 0;
     .cmp-accordion__title {
-      color: $text;
+      color: $text-dark;
     }
   }
 }

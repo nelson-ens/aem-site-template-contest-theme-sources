@@ -6,14 +6,14 @@
       background-color: $color-background;
       border-color: $color-background;
       & .cmp-button__text {
-        color: $text;
+        color: $text-dark;
       }
     }
     &:focus {
       background-color: rgba(0, 0, 0, 0);
       border-color: rgba(0, 0, 0, 0);
       outline: none;
-      box-shadow: 0 0 0 0.125em $accent-focus;
+      box-shadow: 0 0 0 0.125em $color-accent-focus;
     }
     &:disabled {
       background-color: rgba(0, 0, 0, 0);
@@ -25,7 +25,7 @@
   }
 
   .cmp-button__text {
-    color: $text-on-background;
+    color: $text-light;
   }
 
   .cmp-button__icon {

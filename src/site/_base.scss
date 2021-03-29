@@ -9,33 +9,25 @@
   }
 }
 
-@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-Black', bolder) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-BlackItalic', bolder, italic) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-Bold', bolder) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-BoldItalic', bolder, italic) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-ExtraLight', lighter) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-ExtraLightItalic', lighter, italic) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-Italic', normal, italic) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-Light', lighter) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-LightItalic', lighter, italic) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-Regular', normal) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-SemiBold', bold) @include
-    fontface(defaultFont, 'SourceSansPro/SourceSansPro-SemiBoldItalic', bold, italic) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Black', bolder) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-BlackItalic', bolder, italic) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Bold', bolder) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-BoldItalic', bolder, italic) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-ExtraLight', lighter) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-ExtraLightItalic', lighter, italic) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Italic', normal, italic) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Light', lighter) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-LightItalic', lighter, italic) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Regular', normal) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-SemiBold', bold) @include
-    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-SemiBoldItalic', bold, italic) html,
+@include fontface(defaultFont, 'Montserrat/Montserrat-Black', bolder) @include
+    fontface(defaultFont, 'Montserrat/Montserrat-Bold', bolder) @include
+    fontface(defaultFont, 'Montserrat/Montserrat-Regular') @include
+    fontface(defaultFont, 'Montserrat/Montserrat-SemiBold') @include
+    fontface(defaultFont, 'Montserrat/Montserrat-Medium') @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-Black', bolder) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-BlackItalic', bolder, italic) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-Bold', bolder) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-BoldItalic', bolder, italic) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-ExtraLight', lighter) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-ExtraLightItalic', lighter, italic) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-Italic', normal, italic) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-Light', lighter) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-LightItalic', lighter, italic) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-Regular', normal) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-SemiBold', bold) @include
+    fontface(titleFont, 'SourceSansPro/SourceSansPro-SemiBoldItalic', bold, italic) html,
   body {
   margin: 0;
-  color: $color-foreground;
   font-size: $font-size;
   font-family: defaultFont, serif;
   line-height: $font-height;
@@ -43,7 +35,7 @@
 }
 
 a {
-  color: $color-link;
+  color: $color-accent;
 }
 
 p {

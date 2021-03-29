@@ -34,7 +34,7 @@
 .select-selected {
   height: 1.25em;
   padding: 0.5625em 1em 0.6875em 1em;
-  color: $grey4;
+  color: $grey3;
   background-color: $color-background;
   border: 0.0625em solid $grey2;
   border-radius: 0.25em;
@@ -62,7 +62,7 @@
 
 .select-arrow-active {
   margin: -0.0625em;
-  border: 0.125em solid $accent-hover;
+  border: 0.125em solid $color-accent-hover;
   &:after {
     display: inline-block;
     float: right;
@@ -107,8 +107,8 @@
 }
 
 .same-as-selected {
-  color: $text-on-background;
-  background-color: $accent;
+  color: $text-light;
+  background-color: $color-accent;
   &::after {
     display: inline-block;
     float: right;
@@ -116,7 +116,7 @@
     height: 24px;
     margin-right: 0.5em;
     vertical-align: -25%;
-    background-color: $text-on-background;
+    background-color: $text-light;
     content: '';
     mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojMjY4ZTZjO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MDMgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAzIDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNNC45MzIsMjY5LjlhMSwxLDAsMCwxLS44NjQtLjQ2N0wuNzA3LDI2Ni4wNzJhMSwxLDAsMSwxLDEuNDE0LTEuNDE1bDIuODExLDIuODExLDcuNzYxLTcuNzYxYTEsMSwwLDEsMSwxLjQxNCwxLjQxNUw1LjgsMjY5LjQzMmExLDEsMCwwLDEtLjg0Ny40NjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MDcuNTg2IC0xNzIuNjU3KSIvPjwvZz48L3N2Zz4=');
     mask-size: cover;
@@ -180,7 +180,7 @@
 // == text next to checkbox
 .cmp-form-options__field-description {
   margin: 0.5625em 1em 0.6875em 0.375em;
-  color: $text;
+  color: $text-dark;
   vertical-align: super;
 }
 

@@ -1,16 +1,16 @@
 .call-to-action {
   .cmp-button {
-    background-color: $accent;
-    border-color: $accent;
+    background-color: $color-accent;
+    border-color: $color-accent;
     &:hover {
-      background-color: $accent-hover;
-      border-color: $accent-hover;
+      background-color: $color-accent-hover;
+      border-color: $color-accent-hover;
     }
     &:focus {
-      background-color: $accent-focus;
+      background-color: $color-accent-focus;
       border-color: $color-background;
       outline: none;
-      box-shadow: 0 0 0 0.125em $accent-focus;
+      box-shadow: 0 0 0 0.125em $color-accent-focus;
     }
     &:disabled {
       background-color: $grey1;
@@ -22,7 +22,7 @@
   }
 
   .cmp-button__text {
-    color: $text-on-background;
+    color: $text-light;
   }
 
   .cmp-button__icon {
