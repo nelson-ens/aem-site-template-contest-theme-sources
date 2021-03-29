@@ -9,27 +9,17 @@
   }
 }
 
-@include fontface(defaultFont, 'Montserrat/Montserrat-Black', bolder) @include
-    fontface(defaultFont, 'Montserrat/Montserrat-Bold', bolder) @include
-    fontface(defaultFont, 'Montserrat/Montserrat-Regular') @include
-    fontface(defaultFont, 'Montserrat/Montserrat-SemiBold') @include
-    fontface(defaultFont, 'Montserrat/Montserrat-Medium') @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-Black', bolder) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-BlackItalic', bolder, italic) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-Bold', bolder) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-BoldItalic', bolder, italic) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-ExtraLight', lighter) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-ExtraLightItalic', lighter, italic) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-Italic', normal, italic) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-Light', lighter) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-LightItalic', lighter, italic) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-Regular', normal) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-SemiBold', bold) @include
-    fontface(titleFont, 'SourceSansPro/SourceSansPro-SemiBoldItalic', bold, italic) html,
-  body {
+@include fontface('Montserrat Black', 'Montserrat/Montserrat-Black', bolder); 
+@include fontface('Montserrat Bold', 'Montserrat/Montserrat-Bold', bolder);
+@include fontface('Montserrat', 'Montserrat/Montserrat-Regular'); 
+@include fontface('Montserrat SemiBold', 'Montserrat/Montserrat-SemiBold');
+@include fontface('Montserrat Medium', 'Montserrat/Montserrat-Medium');
+@include fontface('SourceSansPro SemiBold', 'SourceSansPro/SourceSansPro-SemiBold', bold); html,
+  
+body {
   margin: 0;
   font-size: $font-size;
-  font-family: defaultFont, serif;
+  font-family: 'Montserrat';
   line-height: $font-height;
   background: $color-background;
 }
