@@ -14,6 +14,7 @@
     display: flex;
     & .aem-Grid {
       display: inherit;
+      justify-content: flex-end;
       & .image {
         display: inline-flex;
       }
@@ -31,6 +32,7 @@
   .cmp-navigation__group {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -39,12 +41,14 @@
     position: relative;
     display: inline-flex;
     margin-left: 0.5em;
+    font-family: 'Montserrat Bold';
+
     & > a {
       padding: 0.5625rem 1rem 0.6875rem 1rem;
     }
     &:hover {
       & > .cmp-navigation__item-link {
-        color: $text-dark;
+        color: $color-accent;
       }
     }
     &:focus {
@@ -52,7 +56,7 @@
       border-radius: 0.25em;
       outline: none;
       .cmp-navigation__item-link {
-        color: $text-dark;
+        color: $color-accent;
       }
     }
     & > .cmp-navigation__group {
@@ -104,7 +108,7 @@
   }
   .cmp-navigation__item-link {
     display: block;
-    color: $grey3;
+    color: $text-dark;
     text-decoration: none;
   }
   .cmp-navigation__item--active > .cmp-navigation__item-link {
@@ -115,18 +119,20 @@
   .cmp-languagenavigation {
     position: relative;
     height: 2.5em;
+    max-width: 10em;
     margin: 0 0.5em;
-    border: 0.125rem solid $grey2;
-    border-radius: 0.25em;
 
     & span {
       color: $grey3;
       vertical-align: middle;
+      content: 'hi';
+      // logo
       &:before {
         margin: 0.6875em 0.5em 0.6875em 0.75em;
         vertical-align: -70%;
       }
     }
+    // arrow
     &:after {
       display: inline-block;
       float: right;
