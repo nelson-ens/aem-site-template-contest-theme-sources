@@ -14,6 +14,7 @@
     display: flex;
     & .aem-Grid {
       display: inherit;
+      justify-content: flex-end;
       & .image {
         display: inline-flex;
       }
@@ -31,6 +32,7 @@
   .cmp-navigation__group {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -39,20 +41,22 @@
     position: relative;
     display: inline-flex;
     margin-left: 0.5em;
+    font-family: $font-bold;
+
     & > a {
       padding: 0.5625rem 1rem 0.6875rem 1rem;
     }
     &:hover {
       & > .cmp-navigation__item-link {
-        color: $text;
+        color: $color-accent;
       }
     }
     &:focus {
-      border: 0.125em solid $accent-focus;
+      border: 0.125em solid $color-accent-focus;
       border-radius: 0.25em;
       outline: none;
       .cmp-navigation__item-link {
-        color: $text;
+        color: $color-accent;
       }
     }
     & > .cmp-navigation__group {
@@ -97,14 +101,14 @@
       &:hover {
         background-color: $grey1;
         & a {
-          color: $text;
+          color: $text-dark;
         }
       }
     }
   }
   .cmp-navigation__item-link {
     display: block;
-    color: $grey4;
+    color: $text-dark;
     text-decoration: none;
   }
   .cmp-navigation__item--active > .cmp-navigation__item-link {
@@ -115,12 +119,11 @@
   .cmp-languagenavigation {
     position: relative;
     height: 2.5em;
+    max-width: 10em;
     margin: 0 0.5em;
-    border: 0.125rem solid $grey2;
-    border-radius: 0.25em;
 
     & span {
-      color: $grey4;
+      color: $grey3;
       vertical-align: middle;
       &:before {
         margin: 0.6875em 0.5em 0.6875em 0.75em;
@@ -140,7 +143,7 @@
       mask-size: cover;
     }
     &:hover {
-      border-color: $accent-focus;
+      border-color: $color-accent-focus;
       &:after {
         background-color: $grey3;
         mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MjUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTI1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTVsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE0TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUzMC41MTUgOTUuODI4KSByb3RhdGUoLTkwKSIvPjwvZz48L3N2Zz4=');
@@ -179,15 +182,15 @@
   }
   .cmp-languagenavigation__item-link {
     margin: 0.5625em 0 0.6875em 0;
-    color: $text;
+    color: $text-dark;
     font-weight: normal;
     font-size: 1em;
     text-decoration: none;
   }
   .cmp-languagenavigation__item--active {
-    background-color: $accent;
+    background-color: $color-accent;
     & > .cmp-languagenavigation__item-link {
-      color: $text-on-background;
+      color: $text-light;
       font-weight: normal;
     }
     &::after {
@@ -370,12 +373,12 @@
       background-color: $color-background;
     }
     &:focus {
-      border-color: $accent-focus;
+      border-color: $color-accent-focus;
       outline: none;
     }
     &:active {
       background-color: $color-background;
-      border-color: $accent-hover;
+      border-color: $color-accent-hover;
       outline: none;
     }
   }
@@ -410,7 +413,7 @@
   .cmp-search__item {
     height: 1.25em;
     padding: 0.5625em 1em 0.6875em 1em;
-    color: $text;
+    color: $text-dark;
     text-decoration: none;
     &:hover {
       background-color: $grey1;

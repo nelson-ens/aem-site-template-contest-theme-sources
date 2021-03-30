@@ -27,7 +27,7 @@
     }
   }
   .cmp-breadcrumb__item--active {
-    color: $text;
+    color: $text-dark;
     line-height: 1.5rem;
   }
   .cmp-breadcrumb__item-link {
@@ -36,10 +36,10 @@
     border: 0.125rem solid $transparent;
     border-radius: 0.25em;
     &:hover {
-      color: $text;
+      color: $text-dark;
     }
     &:focus {
-      border-color: $accent-focus;
+      border-color: $color-accent-focus;
       border-radius: 0.25em;
       outline: none;
     }

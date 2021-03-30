@@ -46,15 +46,15 @@
     & p {
       margin-block: 0;
       & a {
-        color: $accent;
+        color: $color-accent;
         text-decoration: none;
         &:focus {
-          color: $accent-focus;
-          border: 0.125em solid $accent-focus;
+          color: $color-accent-focus;
+          border: 0.125em solid $color-accent-focus;
           border-radius: 0.25em;
         }
         &:hover {
-          color: $accent-hover;
+          color: $color-accent-hover;
         }
       }
     }

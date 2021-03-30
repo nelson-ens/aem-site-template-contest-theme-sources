@@ -6,9 +6,9 @@
   }
   .cmp-tabs__tab {}
   .cmp-tabs__tab--active {
-    border-bottom: 0.125em solid $grey4;
+    border-bottom: 0.125em solid $grey3;
     &:focus {
-      border-bottom: 0.125em solid $grey4;
+      border-bottom: 0.125em solid $grey3;
     }
   }
 

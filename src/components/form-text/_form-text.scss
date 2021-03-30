@@ -21,10 +21,10 @@
     background-color: $color-background;
   }
   &:focus {
-    border-color: $accent-focus;
+    border-color: $color-accent-focus;
   }
   &:active {
-    color: $text;
+    color: $text-dark;
   }
 }
 .cmp-form-text__text {
@@ -40,17 +40,17 @@
     background-color: $color-background;
   }
   &:focus {
-    border-color: $accent-focus;
+    border-color: $color-accent-focus;
   }
   &:active {
-    color: $text;
+    color: $text-dark;
   }
   //&:invalid {
   //  border-color: $error;
-  //  color: $text;
+  //  color: $text-dark;
   //}
   //&:valid {
   //  border-color: $success;
-  //  color: $text;
+  //  color: $text-dark;
   //}
 }

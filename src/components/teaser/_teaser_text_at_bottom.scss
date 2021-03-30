@@ -39,20 +39,20 @@
   .cmp-teaser__title {
     margin-top: 0.625rem;
     margin-bottom: 1.1875rem;
-    color: $text;
+    color: $text-dark;
     font-size: 1.75em;
-    font-family: defaultFont, serif;
+    font-family: $font-bold;
     line-height: 2.25rem;
     text-align: start;
     text-decoration: none;
   }
   .cmp-teaser__title-link {
-    color: $text;
+    color: $text-dark;
     font-weight: 400;
     text-decoration: none;
   }
   .cmp-teaser__description {
-    color: $text;
+    color: $text-dark;
     font-weight: 300;
     font-size: 1em;
     line-height: 1.75em;
@@ -67,25 +67,25 @@
   .cmp-teaser__action-link {
     margin-right: 0.8em;
     padding: 0.5625em 1em 0.6875em 1em;
-    color: $text-on-background;
+    color: $text-light;
     font-weight: 300;
     text-decoration: none;
     border-radius: 1.56em;
   }
 
   .cmp-teaser__action-link:first-child {
-    background-color: $accent;
-    border: 0.125em solid $accent;
+    background-color: $color-accent;
+    border: 0.125em solid $color-accent;
 
     &:hover {
-      background-color: $accent-hover;
-      border-color: $accent-hover;
+      background-color: $color-accent-hover;
+      border-color: $color-accent-hover;
     }
     &:focus {
-      background-color: $accent-focus;
+      background-color: $color-accent-focus;
       border-color: $color-background;
       outline: none;
-      box-shadow: 0 0 0 0.125em $accent-focus;
+      box-shadow: 0 0 0 0.125em $color-accent-focus;
     }
     &:disabled {
       background-color: $grey1;
@@ -94,18 +94,18 @@
   }
 
   .cmp-teaser__action-link:not(:first-child) {
-    color: $grey4;
+    color: $grey3;
     background-color: rgba(0, 0, 0, 0);
-    border: 0.125em solid $grey4;
+    border: 0.125em solid $grey3;
 
     &:hover {
-      color: $text-on-background;
-      background-color: $grey4;
+      color: $text-light;
+      background-color: $grey3;
     }
     &:focus {
-      color: $grey4;
+      color: $grey3;
       background-color: $color-background;
-      border: 0.125em solid $grey4;
+      border: 0.125em solid $grey3;
       outline: none;
       box-shadow: none;
     }

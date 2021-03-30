@@ -30,9 +30,9 @@
   margin-top: 0.5625rem;
   margin-bottom: 1rem;
   color: #ffffff;
-  font-size: 2.25em;
-  font-family: titleFont, serif;
-  line-height: 3.0625rem;
+  font-size: 3em;
+  font-family: $font-bolder;
+  line-height: 4.125rem;
   text-align: center;
   text-decoration: none;
 }
@@ -44,7 +44,7 @@
 .cmp-teaser__description {
   color: #ffffff;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 1.75em;
   text-align: center;
 }
@@ -56,25 +56,25 @@
 .cmp-teaser__action-link {
   margin-right: 0.8em;
   padding: 0.5625em 1em 0.6875em 1em;
-  color: $text-on-background;
+  color: $text-light;
   font-weight: 300;
   text-decoration: none;
   border-radius: 1.56em;
 }
 
 .cmp-teaser__action-link:first-child {
-  background-color: $accent;
-  border: 0.125em solid $accent;
+  background-color: $color-accent;
+  border: 0.125em solid $color-accent;
 
   &:hover {
-    background-color: $accent-hover;
-    border-color: $accent-hover;
+    background-color: $color-accent-hover;
+    border-color: $color-accent-hover;
   }
   &:focus {
-    background-color: $accent-focus;
+    background-color: $color-accent-focus;
     border-color: $color-background;
     outline: none;
-    box-shadow: 0 0 0 0.125em $accent-focus;
+    box-shadow: 0 0 0 0.125em $color-accent-focus;
   }
   &:disabled {
     background-color: $grey1;
@@ -83,20 +83,20 @@
 }
 
 .cmp-teaser__action-link:not(:first-child) {
-  color: $text-on-background;
+  color: $text-light;
   background-color: rgba(0, 0, 0, 0);
   border: 0.125em solid $color-background;
 
   &:hover {
-    color: $text;
+    color: $text-dark;
     background-color: $color-background;
   }
   &:focus {
-    color: $text-on-background;
+    color: $text-light;
     background-color: rgba(0, 0, 0, 0);
     border: 0.125em solid $color-background;
     outline: none;
-    box-shadow: 0 0 0 0.125em $accent-focus;
+    box-shadow: 0 0 0 0.125em $color-accent-focus;
   }
   &:disabled {
     color: $grey1;
