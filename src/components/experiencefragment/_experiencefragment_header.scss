@@ -41,7 +41,7 @@
     position: relative;
     display: inline-flex;
     margin-left: 0.5em;
-    font-family: 'Montserrat Bold';
+    font-family: $font-bold;
 
     & > a {
       padding: 0.5625rem 1rem 0.6875rem 1rem;
@@ -125,14 +125,11 @@
     & span {
       color: $grey3;
       vertical-align: middle;
-      content: 'hi';
-      // logo
       &:before {
         margin: 0.6875em 0.5em 0.6875em 0.75em;
         vertical-align: -70%;
       }
     }
-    // arrow
     &:after {
       display: inline-block;
       float: right;

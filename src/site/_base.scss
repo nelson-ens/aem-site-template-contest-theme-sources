@@ -14,12 +14,11 @@
 @include fontface('Montserrat', 'Montserrat/Montserrat-Regular'); 
 @include fontface('Montserrat SemiBold', 'Montserrat/Montserrat-SemiBold');
 @include fontface('Montserrat Medium', 'Montserrat/Montserrat-Medium');
-@include fontface('SourceSansPro SemiBold', 'SourceSansPro/SourceSansPro-SemiBold', bold); html,
   
 body {
   margin: 0;
   font-size: $font-size;
-  font-family: 'Montserrat';
+  font-family: $font-regular;
   line-height: $font-height;
   background: $color-background;
 }

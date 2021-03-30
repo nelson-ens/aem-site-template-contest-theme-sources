@@ -2,7 +2,7 @@
   .cmp-title {
   }
   .cmp-title__text {
-    font-family: 'Montserrat Black', serif;
+    font-family: $font-bolder;
     font-size: 3em;
     line-height: 4.125rem;
   }
@@ -14,7 +14,7 @@
   .cmp-title {
   }
   .cmp-title__text {
-    font-family: 'Montserrat Bold', serif;
+    font-family: $font-bold;
     font-size: 2.25em;
     line-height: 3.0625rem;
   }
@@ -26,7 +26,7 @@
   .cmp-title {
   }
   .cmp-title__text {
-    font-family: 'Montserrat Bold', serif;
+    font-family: $font-bold;
     font-size: 1.75em;
     line-height: 2.25rem;
   }
@@ -38,7 +38,7 @@
   .cmp-title {
   }
   .cmp-title__text {
-    font-family: 'Montserrat Bold', serif;
+    font-family: $font-bold;
     font-size: 1.125em;
   }
   .cmp-title__link {
@@ -49,7 +49,7 @@
   .cmp-title {
   }
   .cmp-title__text {
-    font-family: 'Montserrat SemiBold', serif;
+    font-family: $font-semibold;
     font-weight: normal;
     font-size: 1em;
   }
@@ -61,7 +61,7 @@
   .cmp-title {
   }
   .cmp-title__text {
-    font-family: 'SourceSansPro SemiBold', serif;
+    font-family: $font-bold;
     color: $grey3;
     font-weight: normal;
     font-size: 0.625em;
