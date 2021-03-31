@@ -1,0 +1,116 @@
+.homeHeader {
+  .cmp-teaser {
+    position: relative;
+  }
+  .cmp-teaser__image {
+    & .cmp-image {
+      margin: 0;
+    }
+    & img {
+      display: block;
+      height: 30em;
+      object-fit: cover;
+    }
+  }
+  .cmp-teaser__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cmp-teaser__pretitle {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.625em;
+    line-height: 1.125em;
+    letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
+
+    & img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .cmp-teaser__title {
+    margin-top: 0.5625rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 3em;
+    font-family: $font-bolder;
+    line-height: 4.125rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  .cmp-teaser__title-link {
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .cmp-teaser__description {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 1.75em;
+    text-align: center;
+
+    & p {
+      line-height: 1rem;
+    }
+  }
+  .cmp-teaser__action-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  .cmp-teaser__action-link {
+    margin-right: 0.8em;
+    padding: 0.5625em 1em 0.6875em 1em;
+    color: $text-light;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 1.56em;
+  }
+
+  .cmp-teaser__action-link:first-child {
+    background-color: $color-accent;
+    border: 0.125em solid $color-accent;
+
+    &:hover {
+      background-color: $color-accent-hover;
+      border-color: $color-accent-hover;
+    }
+    &:focus {
+      background-color: $color-accent-focus;
+      border-color: $color-background;
+      outline: none;
+      box-shadow: 0 0 0 0.125em $color-accent-focus;
+    }
+    &:disabled {
+      background-color: $grey1;
+      border-color: $grey1;
+    }
+  }
+
+  .cmp-teaser__action-link:not(:first-child) {
+    color: $text-light;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.125em solid $color-background;
+
+    &:hover {
+      color: $text-dark;
+      background-color: $color-background;
+    }
+    &:focus {
+      color: $text-light;
+      background-color: rgba(0, 0, 0, 0);
+      border: 0.125em solid $color-background;
+      outline: none;
+      box-shadow: 0 0 0 0.125em $color-accent-focus;
+    }
+    &:disabled {
+      color: $grey1;
+      border-color: $grey1;
+    }
+  }
+}
