@@ -1,81 +1,94 @@
-var numOfImages;
-var left;
-var right;
-var allImages;
-
-function createInsertedImage(imgURL, text) {
-  var container = document.createElement("div");
-  var image = document.createElement("img");
-  var caption = document.createElement("span");
-  image.src = imgURL;
-  caption.textContent = text;
-  container.setAttribute("class", "inserted-image");
-  container.appendChild(image);
-  container.appendChild(caption);
-  return container;
-}
-
-function getImageData(index) {
-  return allImages[index].getElementsByClassName("cmp-image")[0].dataset;
-}
-
-function updateImage(position, newIndex) {
-  var imgPosition = position === "left" ? 0 : 1;
-  var insertedImages = document.getElementsByClassName("inserted-image");
-  var image = insertedImages[imgPosition].getElementsByTagName("img")[0];
-  var caption = insertedImages[imgPosition].getElementsByTagName("span")[0];
-  var data = getImageData(newIndex);
-
-  image.src = data.asset;
-  caption.textContent = data.title;
-}
-
-function moveImages(direction) {
-  if (direction === "next") {
-    left = left + 1 >= numOfImages ? 0 : left + 1;
-    right = right + 1 >= numOfImages ? 0 : right + 1;
-  } else {
-    left = left - 1 < 0 ? numOfImages - 1 : left - 1;
-    right = right - 1 < 0 ? numOfImages - 1 : right - 1;
+class CarouselWithThreeImages {
+  constructor(carousel) {
+    this.numOfImages;
+    this.left;
+    this.right;
+    this.allImages;
+    this.insertImages(carousel);
   }
-  updateImage("left", left);
-  updateImage("right", right);
+
+  getImageData(index) {
+    return this.allImages[index].getElementsByClassName("cmp-image")[0].dataset;
+  }
+
+  createInsertedImage(imgURL, text) {
+    var container = document.createElement("div");
+    var image = document.createElement("img");
+    var caption = document.createElement("span");
+    image.src = imgURL;
+    caption.textContent = text;
+    container.setAttribute("class", "inserted-image");
+    container.appendChild(image);
+    container.appendChild(caption);
+    return container;
+  }
+
+  insertImages(carousel) {
+    if (!carousel) return;
+    var content = carousel.getElementsByClassName("cmp-carousel__content")[0];
+    var images = content.getElementsByClassName("cmp-carousel__item");
+    this.numOfImages = images.length;
+    this.left = this.numOfImages - 1;
+    this.right = 1;
+    this.allImages = images;
+
+    var leftData = this.getImageData(this.left);
+    var rightData = this.getImageData(this.right);
+
+    var leftImage = this.createInsertedImage(leftData.asset, leftData.title);
+    var rightImage = this.createInsertedImage(rightData.asset, rightData.title);
+
+    content.insertBefore(leftImage, content.firstChild);
+    content.insertBefore(rightImage, content.lastChild);
+  }
+
+  updateImage(position, newIndex) {
+    var imgPosition = position === "left" ? 0 : 1;
+    var insertedImages = document.getElementsByClassName("inserted-image");
+    var image = insertedImages[imgPosition].getElementsByTagName("img")[0];
+    var caption = insertedImages[imgPosition].getElementsByTagName("span")[0];
+    var data = this.getImageData(newIndex);
+
+    image.src = data.asset;
+    caption.textContent = data.title;
+  }
+
+  moveImages(direction) {
+    if (direction === "next") {
+      this.left = this.left + 1 >= this.numOfImages ? 0 : this.left + 1;
+      this.right = this.right + 1 >= this.numOfImages ? 0 : this.right + 1;
+    } else {
+      this.left = this.left - 1 < 0 ? this.numOfImages - 1 : this.left - 1;
+      this.right = this.right - 1 < 0 ? this.numOfImages - 1 : this.right - 1;
+    }
+    this.updateImage("left", this.left);
+    this.updateImage("right", this.right);
+  }
 }
 
-function insertImages() {
-  var carousel = document.getElementsByClassName("showThreeImages")[0];
-  if (!carousel) return;
-  var content = carousel.getElementsByClassName("cmp-carousel__content")[0];
-  var images = content.getElementsByClassName("cmp-carousel__item");
+var allCarousels = [];
 
-  var carousel = document.getElementsByClassName("showOneImage")[0];
-  numOfImages = images.length;
-  left = numOfImages - 1;
-  right = 1;
-  allImages = images;
-
-  var leftData = getImageData(left);
-  var rightData = getImageData(right);
-
-  var leftImage = createInsertedImage(leftData.asset, leftData.title);
-  var rightImage = createInsertedImage(rightData.asset, rightData.title);
-
-  content.insertBefore(leftImage, content.firstChild);
-  content.insertBefore(rightImage, content.lastChild);
+function initThreeImageCarousels() {
+  var carousels = document.getElementsByClassName("showThreeImages");
+  for (var i = 0; i < carousels.length; i++) {
+    allCarousels.push(new CarouselWithThreeImages(carousels[i]));
+  }
 }
 
 window.addEventListener("click", function (event) {
-  var carousel = document.getElementsByClassName("showThreeImages")[0];
-  if (!carousel) return;
-  var buttons = document.getElementsByClassName("cmp-carousel__action");
-  var prev = buttons[0];
-  var next = buttons[1];
+  for (var i = 0; i < allCarousels.length; i++) {
+    carousel = allCarousels[i];
+    if (!carousel) return;
+    var buttons = document.getElementsByClassName("cmp-carousel__action");
+    var prev = buttons[0];
+    var next = buttons[1];
 
-  if (prev.contains(event.target)) {
-    moveImages("prev");
-  } else if (next.contains(event.target)) {
-    moveImages("next");
-  } else return;
+    if (prev.contains(event.target)) {
+      carousel.moveImages("prev");
+    } else if (next.contains(event.target)) {
+      carousel.moveImages("next");
+    } else return;
+  }
 });
 
-window.onload = insertImages;
+window.onload = initThreeImageCarousels;
