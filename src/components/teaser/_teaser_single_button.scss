@@ -1,11 +1,11 @@
 .singleButton {
-  border-radius: 10px;
+  border-radius: $border-radius;
 
   .cmp-teaser {
     position: relative;
   }
   .cmp-teaser__image {
-    border-radius: 10px;
+    border-radius: $border-radius;
 
     & .cmp-image {
       margin: 0;
@@ -14,7 +14,7 @@
       display: block;
       height: 24em;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: $border-radius;
     }
   }
   .cmp-teaser__content {
@@ -45,7 +45,7 @@
     color: $text-light;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: $border-radius;
   }
 
   .cmp-teaser__action-link:first-child {

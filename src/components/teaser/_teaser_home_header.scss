@@ -19,7 +19,7 @@
     transform: translate(-50%, -50%);
   }
   .cmp-teaser__pretitle {
-    color: #ffffff;
+    color: $text-light;
     font-weight: 300;
     font-size: 0.625em;
     line-height: 1.125em;
@@ -37,7 +37,7 @@
   .cmp-teaser__title {
     margin-top: 0.5625rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: $text-light;
     font-size: 3em;
     font-family: $font-bolder;
     line-height: 1rem;
@@ -46,12 +46,12 @@
     text-decoration: none;
   }
   .cmp-teaser__title-link {
-    color: #ffffff;
+    color: $text-light;
     font-weight: 400;
     text-decoration: none;
   }
   .cmp-teaser__description {
-    color: #ffffff;
+    color: $text-light;
     font-weight: 100;
     font-size: 1.25em;
     line-height: 1.75em;
@@ -97,7 +97,7 @@
 
   .cmp-teaser__action-link:not(:first-child) {
     color: $text-light;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: $transparent;
     border: 0.125em solid $color-background;
 
     &:hover {

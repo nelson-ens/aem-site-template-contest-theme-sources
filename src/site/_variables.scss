@@ -1,9 +1,9 @@
 //== Font
-$font-bolder: 'Montserrat Black';
-$font-bold: 'Montserrat Bold';
-$font-semibold: 'Montserrat SemiBold';
-$font-medium: 'Montserrat Medium';
-$font-regular: 'Montserrat';
+$font-bolder: "Montserrat Black";
+$font-bold: "Montserrat Bold";
+$font-semibold: "Montserrat SemiBold";
+$font-medium: "Montserrat Medium";
+$font-regular: "Montserrat";
 $font-size: 16px;
 $font-height: 20px;
 
@@ -24,3 +24,7 @@ $transparent: rgba(0, 0, 0, 0);
 //== Grid
 
 $max_col: 12;
+
+//== Border
+$border-radius: 10px;
+$border-boxed-teaser: 10px 0 0 10px;
