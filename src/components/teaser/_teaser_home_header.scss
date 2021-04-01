@@ -27,9 +27,11 @@
     text-align: center;
     text-transform: uppercase;
 
-    & img {
-      width: 50px;
-      height: 50px;
+    & .cmp-teaser__pretitle-icon {
+      width: 64px;
+      height: 64px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
   }
   .cmp-teaser__title {
@@ -38,7 +40,8 @@
     color: #ffffff;
     font-size: 3em;
     font-family: $font-bolder;
-    line-height: 4.125rem;
+    line-height: 1rem;
+    margin-bottom: 3.125rem;
     text-align: center;
     text-decoration: none;
   }
@@ -49,8 +52,8 @@
   }
   .cmp-teaser__description {
     color: #ffffff;
-    font-weight: 300;
-    font-size: 1.5em;
+    font-weight: 100;
+    font-size: 1.25em;
     line-height: 1.75em;
     text-align: center;
 

@@ -4,4 +4,31 @@
   .cmp-teaser__image {
     display: none;
   }
+  .cmp-teaser__content {
+  }
+  .cmp-teaser__pretitle {
+    font-size: 0.75em;
+    font-weight: 900;
+    color: $color-accent-hover;
+  }
+  .cmp-teaser__title {
+    font-size: 1.5em;
+    line-height: 2rem;
+  }
+  .cmp-teaser__title-link {
+    line-height: 2rem;
+  }
+  .cmp-teaser__description {
+    line-height: 1em;
+    padding-right: 25%;
+
+    & p {
+      line-height: 1.5em;
+    }
+  }
+  .cmp-teaser__action-container {
+  }
+  .cmp-teaser__action-link {
+    font-size: 0.8em;
+  }
 }
