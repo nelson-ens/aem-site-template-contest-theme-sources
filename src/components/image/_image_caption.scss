@@ -1,14 +1,34 @@
 .caption {
+  z-index: 1;
+  position: relative;
   .cmp-image {
-  }
-  .cmp-image__link {
-  }
-  .cmp-image__image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: $image-shadow;
     border-radius: $border-radius;
   }
+  .cmp-image__link {
+    width: 100%;
+  }
+  .cmp-image__image {
+    width: 100%;
+    border-radius: $border-radius;
+    border-style: none;
+    border-color: transparent;
+    z-index: -1;
+    position: relative;
+  }
+
   .cmp-image__title {
-    margin-top: 1rem;
-    color: $grey3;
-    font-size: 0.625em;
+    z-index: 1;
+    bottom: 15%;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    color: $color-background;
+    font-family: $font-bold;
+    font-size: 1.75em;
+    line-height: 1.2em;
   }
 }

@@ -19,7 +19,6 @@
 
     .cmp-carousel__item {
       display: none;
-      box-shadow: $image-shadow;
       width: 32%;
       border-color: $transparent;
       border-width: thick;
@@ -28,25 +27,11 @@
       &:hover {
         border-color: $color-accent;
       }
-      span {
-        position: absolute;
-        bottom: 10%;
-        font-family: $font-bold;
-        font-size: 1.75em;
-        color: $color-background;
-      }
-      img {
-        z-index: -1;
-        max-height: 12vh;
-      }
-    }
-    .cmp-carousel__item div div {
-      display: flex;
-      justify-content: center;
     }
   }
   .cmp-carousel__actions {
     position: absolute;
+    z-index: 1;
     bottom: 45%;
     display: flex;
     left: 0;
