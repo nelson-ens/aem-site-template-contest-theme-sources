@@ -67,12 +67,12 @@
     margin: 1.5rem 0;
   }
   .cmp-teaser__action-link {
-    margin-right: 0.8em;
     padding: 0.5625em 1em 0.6875em 1em;
     color: $text-light;
     font-weight: 300;
     text-decoration: none;
     border-radius: 1.56em;
+    margin-right: 0;
   }
 
   .cmp-teaser__action-link:first-child {
@@ -99,6 +99,7 @@
     color: $text-light;
     background-color: $transparent;
     border: 0.125em solid $color-background;
+    margin-left: 0.8em;
 
     &:hover {
       color: $text-dark;
