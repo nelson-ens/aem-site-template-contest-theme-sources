@@ -15,10 +15,12 @@ $color-accent: #46a740;
 $color-accent-focus: #58af52;
 $color-accent-hover: #24811f;
 $text-dark: #202c45;
+$text-dark-semi-transparent: rgba(32, 44, 69, 0.5);
 $text-light: #ffffff;
 $grey1: #ededed;
 $grey2: #dbdbdb;
 $grey3: #aaaaaa;
+$grey3-semi-transparent: rgba(219, 219, 219, 0.5);
 $transparent: rgba(0, 0, 0, 0);
 
 //== Grid
@@ -26,5 +28,11 @@ $transparent: rgba(0, 0, 0, 0);
 $max_col: 12;
 
 //== Border
+
 $border-radius: 10px;
 $border-boxed-teaser: 10px 0 0 10px;
+$outline-border-radius: 15px;
+
+//== Image
+
+$image-shadow: inset 0 -50px 70px -30px rgba(0, 0, 0, 1);
