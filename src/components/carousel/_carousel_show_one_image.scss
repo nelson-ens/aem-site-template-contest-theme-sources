@@ -14,8 +14,8 @@
       margin: 0;
     }
     .cmp-carousel__item {
-      border-radius: 2em;
-      box-shadow: inset 0 -50px 70px -30px rgba(0, 0, 0, 1);
+      border-radius: $image-border-radius;
+      box-shadow: $image-shadow;
       max-height: 30vh;
       img {
         z-index: -1;
@@ -67,7 +67,7 @@
   .cmp-carousel__action--disabled {
   }
   .cmp-carousel__action--previous {
-    background-color: rgba(219, 219, 219, 0.5);
+    background-color: $grey3-semi-transparent;
     & .cmp-carousel__action-icon {
       &:before {
         mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00ODUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDg1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTVsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE0TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwMSA5OC42NTcpIHJvdGF0ZSgxODApIi8+PC9nPjwvc3ZnPg==");
@@ -75,7 +75,7 @@
     }
   }
   .cmp-carousel__action--next {
-    background-color: rgba(32, 44, 69, 0.5);
+    background-color: $text-dark-semi-transparent;
     &:hover {
       background-color: $text-dark;
     }
