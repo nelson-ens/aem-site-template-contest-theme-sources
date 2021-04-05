@@ -69,12 +69,10 @@ class CarouselWithThreeImages {
   }
 }
 
-var allCarousels = [];
-
 function initThreeImageCarousels() {
-  var carousels = document.getElementsByClassName("showThreeImages");
+  var carousels = document.getElementsByClassName("carousel-showThreeImages");
   for (var i = 0; i < carousels.length; i++) {
-    allCarousels.push(new CarouselWithThreeImages(carousels[i]));
+    new CarouselWithThreeImages(carousels[i]);
   }
 }
 
