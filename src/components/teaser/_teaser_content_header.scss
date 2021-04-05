@@ -13,12 +13,12 @@
     }
   }
   .cmp-teaser__content {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 30%);
+    height: 100%;
     width: 100%;
     display: flex;
     flex-flow: row;
-    position: absolute;
-    top: 90%;
-    left: 50%;
+    align-items: flex-end;
     padding-left: 14%;
     transform: translate(-50%, -50%);
   }
@@ -31,10 +31,12 @@
     text-transform: uppercase;
 
     & .cmp-teaser__pretitle-icon {
-      width: 64px;
-      height: 64px;
+      width: 48px;
+      height: 50px;
       background-repeat: no-repeat;
       background-size: 100% 100%;
+      margin-bottom: 1rem;
+      margin-right: 25px;
     }
   }
   .cmp-teaser__title {
@@ -44,7 +46,6 @@
     font-size: 3em;
     font-family: $font-bolder;
     line-height: 2.5rem;
-    margin-bottom: 3.125rem;
     text-decoration: none;
     text-align: left;
   }
