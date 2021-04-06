@@ -1,0 +1,23 @@
+.textWithIcon {
+  .cmp-text {
+    & p {
+      display: flex;
+      flex-flow: row;
+      align-items: flex-start;
+      justify-content: start;
+    }
+
+    .cmp-text_textWithIcon_icon {
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      margin-right: 1em;
+    }
+    .cmp-text_textWithIcon_caption {
+      display: inline-block;
+      max-width: 300px;
+    }
+  }
+}
