@@ -62,15 +62,16 @@
       outline: none;
     }
   }
-  .cmp-carousel__action--disabled {
-  }
   .cmp-carousel__action--previous {
     position: relative;
     left: -1.8rem;
-    background-color: $grey3-semi-transparent;
+    background-color: $color-accent;
+    &:hover {
+      background-color: $color-accent-hover;
+    }
     & .cmp-carousel__action-icon {
       &:before {
-        background-color: $grey3;
+        background-color: $color-background;
         mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00ODUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDg1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTVsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE0TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwMSA5OC42NTcpIHJvdGF0ZSgxODApIi8+PC9nPjwvc3ZnPg==");
       }
     }
@@ -86,6 +87,17 @@
       &:before {
         background-color: $color-background;
         mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQ1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMzAuNzA3LTMuNTY1YTEsMSwwLDAsMSwwLTEuNDE0bDQuOTQ5LTQuOTUtNC45NDktNC45NWExLDEsMCwwLDEsMC0xLjQxNCwxLDEsMCwwLDEsMS40MTQsMGw1LjY1Nyw1LjY1NmExLDEsMCwwLDEsLjI5My43MDcsMSwxLDAsMCwxLS4yOTMuNzA3TDMyLjEyMS0zLjU2NWExLDEsMCwwLDEtLjcwNy4yOTNBMSwxLDAsMCwxLDMwLjcwNy0zLjU2NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMi45MjkgMTAxLjkyOSkiLz48L2c+PC9zdmc+");
+      }
+    }
+  }
+  .cmp-carousel__action--disabled {
+    background-color: $grey3-semi-transparent;
+    &:hover {
+      background-color: $grey3-semi-transparent;
+    }
+    & .cmp-carousel__action-icon {
+      &:before {
+        background-color: $grey3;
       }
     }
   }
