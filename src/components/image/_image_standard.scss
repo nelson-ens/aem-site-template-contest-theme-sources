@@ -1,9 +1,25 @@
 .standard {
-  .cmp-image {}
-  .cmp-image__link {}
-  .cmp-image__image {
+  z-index: 1;
+  position: relative;
+  .cmp-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: $image-shadow;
     border-radius: $border-radius;
   }
+  .cmp-image__link {
+    width: 100%;
+  }
+  .cmp-image__image {
+    width: 100%;
+    border-radius: $border-radius;
+    border-style: none;
+    border-color: transparent;
+    z-index: -1;
+    position: relative;
+  }
+
   .cmp-image__title {
     display: none;
   }
