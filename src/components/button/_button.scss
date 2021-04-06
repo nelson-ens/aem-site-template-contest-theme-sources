@@ -1,7 +1,7 @@
 .cmp-button {
   width: fit-content;
   height: fit-content;
-  margin: 0.5em 0.5em;
+  margin: 2em 1em 4em;
   padding: 0.5625em 1em 0.6875em 1em;
   border-style: solid;
   border-width: 0.125em;
@@ -10,6 +10,7 @@
 .cmp-button__text {
   font-weight: 300;
   text-decoration: none;
+  font-family: $font-semibold;
 }
 .cmp-button__icon {
 }

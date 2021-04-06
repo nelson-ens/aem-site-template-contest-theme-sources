@@ -1,26 +1,29 @@
 .primary {
+  display: flex !important;
+  justify-content: center;
   .cmp-button {
-    background-color: $color-background;
-    border-color: $grey3;
+    padding-right: 2em;
+    padding-left: 2em;
+    background-color: $text-dark;
+    border-style: none;
+    border-radius: $border-radius;
     &:hover {
-      background-color: $grey3;
-      border-color: $grey3;
+      background-color: $color-dark;
       & .cmp-button__text {
-        color: $text-light;
+        color: $color-background;
       }
     }
     &:focus {
-      background-color: $grey3;
-      border-color: $color-background;
+      background-color: $text-dark;
+      border-color: $text-dark;
       outline: none;
       box-shadow: 0 0 0 0.125em $color-accent-focus;
       & .cmp-button__text {
-        color: $text-light;
+        color: $color-background;
       }
     }
     &:disabled {
       background-color: $color-background;
-      border-color: $grey1;
       & .cmp-button__text {
         color: $grey2;
       }
@@ -28,7 +31,7 @@
   }
 
   .cmp-button__text {
-    color: $grey3;
+    color: $color-background;
   }
 
   .cmp-button__icon {
