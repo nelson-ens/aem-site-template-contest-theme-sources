@@ -1,0 +1,27 @@
+.captionBelow {
+  .cmp-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .cmp-image__link {
+    width: 100%;
+  }
+  .cmp-image__image {
+    width: 100%;
+    border-radius: $border-radius;
+    border-style: none;
+  }
+
+  .cmp-image__title {
+    z-index: 1;
+    width: 100%;
+    margin-top: 8%;
+    color: $text-dark;
+    font-family: $font-bold;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    padding-bottom: 1em;
+  }
+}
