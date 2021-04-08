@@ -7,6 +7,47 @@ $font-regular: "Montserrat";
 $font-size: 16px;
 $font-height: 20px;
 
+//== Breakpoints
+
+$screen-sm-max: 500px;
+$screen-md-max: 850px;
+$screen-lg-max: 1300px;
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+      @content;
+  }
+}
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+      @content;
+  }
+}
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+      @content;
+  }
+}
+
+  $text-small: 1.15vw;
+  $text-medium: 1.25vw;
+  $text-large: 1.5vw;
+  $text-extra-large: 1.75vw;
+  $text-height-small: 1.25vw;
+  $text-height-medium: 1.5vw;
+  $text-height-large: 1.75vw;
+
+  $text-fixed-extra-small: 0.7em;
+  $text-fixed-small: 0.8em;
+  $text-fixed-medium: 1em;
+  $text-fixed-large: 1.25em;
+  $text-fixed-extra-large: 1.75em;
+  $text-fixed-height-small: 0.9em;
+  $text-fixed-height-medium: 1.15em;
+  $text-fixed-height-large: 1.5em;
+
+
+
 //== Color
 
 $color-shadow: #00000029;

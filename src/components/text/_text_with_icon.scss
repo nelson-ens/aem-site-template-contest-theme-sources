@@ -1,4 +1,8 @@
 .textWithIcon {
+  @include sm {
+    font-size: $text-fixed-small;
+    line-height: $text-fixed-height-small;
+  }
   .cmp-text {
     & p {
       display: flex;

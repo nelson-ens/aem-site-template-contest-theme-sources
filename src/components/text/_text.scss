@@ -1,8 +1,18 @@
+.text {
+  @include sm {
+    width: 80% !important;
+  }
+}
+
 .cmp-text {
   margin: 0.75rem 0 0 0;
   color: $text-dark;
   font-weight: normal;
   font-size: 1em;
+  @include sm {
+    font-size: $text-fixed-small;
+    line-height: $text-fixed-height-small;
+  }
   & b {
     font-weight: bold;
   }
@@ -36,7 +46,7 @@
     margin-inline: 0;
   }
   & ul li::marker {
-    content: '-  ';
+    content: "-  ";
   }
 }
 .cmp-text__paragraph {

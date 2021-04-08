@@ -61,16 +61,23 @@
       width: 3.25em;
       height: 2.125em;
       margin-right: 1em;
+      @include sm {
+        margin: 0.5em 0.2em 0em 0.5em;
+        width: 2em;
+      }
     }
     .cmp-text_textHorizontalMenu_caption {
       display: flex;
       align-items: center;
-
+      font-size: 1.125em;
+      font-family: $font-bold;
+      @include sm {
+        font-size: $text-fixed-extra-small;
+        line-height: $text-fixed-height-small;
+      }
       & a {
         text-decoration: none;
         color: $text-dark;
-        font-size: 1.125em;
-        font-weight: 900;
       }
     }
   }
