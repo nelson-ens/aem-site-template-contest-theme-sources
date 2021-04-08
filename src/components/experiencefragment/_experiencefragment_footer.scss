@@ -4,6 +4,24 @@
   margin-top: 5em;
   padding: 1.625em 0 1.5625em 0;
   border-top: 0.125em solid $grey1;
+  @include sm {
+    padding: 1.625em 2em 1.5625em 1em;
+  }
+
+  .cmp-container .aem-Grid {
+    align-items: left;
+
+    @include sm {
+      padding: 1.625em 2em 1.5625em 1em;
+      & .text {
+        width: 100%;
+        margin: 0;
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 
   & div {
     height: 100%;
