@@ -4,7 +4,7 @@
   padding: 1.625em 0 1.5625em 0;
   border-top: 0.125em solid $grey1;
   @include sm {
-    padding: 1.625em 2em 1.5625em 1em;
+    padding: 1.625em 2em 1.5625em 2em;
   }
 
   .cmp-container .aem-Grid {
@@ -13,7 +13,7 @@
     @include sm {
       padding: 1.625em 2em 1.5625em 1em;
       & .text {
-        width: 100%;
+        width: 100% !important;
         margin: 0;
         &:last-child {
           margin-left: 0;
@@ -37,6 +37,7 @@
   .image,
   .text {
     margin: 0 1em;
+    height: 3em;
   }
 
   & .cmp-image {
@@ -47,6 +48,7 @@
     display: block;
     width: 9.2em;
     margin: 0 auto;
+    height: 3em;
   }
 
   .cmp-title {

@@ -25,10 +25,14 @@
       font-size: 1.25em;
       line-height: 1.25em;
       color: $text-dark;
-      margin-top: 2em;
-      @include sm {
+      margin: 2em 2em 1em 2em;
+      @include md {
         font-size: $text-fixed-medium;
         line-height: $text-fixed-height-large;
+      }
+      @include sm {
+        font-size: $text-fixed-small;
+        line-height: $text-fixed-height-medium;
       }
     }
 
