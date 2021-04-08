@@ -8,6 +8,7 @@
     margin-top: 0.5em;
     min-width: 10em;
   }
+
   //=================== Grid layout ===================
 
   .cmp-container .aem-Grid {
@@ -51,10 +52,10 @@
         width: 100% !important;
         display: flex;
         justify-content: space-between;
-        margin: 1em 0 0 10%; 
+        margin: 1em 0 0 10%;
       }
       @include sm {
-        margin: 1em 0 0 5%; 
+        margin: 1em 0 0 5%;
       }
     }
   }
@@ -85,9 +86,9 @@
     font-family: $font-bold;
 
     & > a {
-      padding: 0.5625rem 1rem 0.6875rem;
+      padding: 0.5625rem 0 0.6875rem 1em;
       @include lg {
-        padding: 0.5625rem 0.3rem 0.6875rem;
+        padding: 0.5625rem 0 0.6875rem 0.3rem;
       }
       @include sm {
         font-size: $text-fixed-extra-small;
@@ -119,13 +120,13 @@
       border-radius: 0.25em;
       box-shadow: 0 0.25em 0.5em 0.2em $color-shadow;
       visibility: collapse;
-      transition-delay: 0.5s;
+      opacity: 0;
     }
   }
   .cmp-navigation__item--level-0:nth-child(1) {
     &:after {
       display: inline-block;
-      width: 24px;
+      width: 36px;
       height: 24px;
       margin: 0.5em 0.5em 0.5em 0;
       background-color: $grey2;
@@ -136,7 +137,9 @@
     }
     &:hover {
       & > .cmp-navigation__group {
+        opacity: 1;
         visibility: visible;
+        transition: 0.5s;
       }
       &:after {
         mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MjUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTI1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTVsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE0TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUzMC41MTUgOTUuODI4KSByb3RhdGUoLTkwKSIvPjwvZz48L3N2Zz4=");
@@ -144,7 +147,6 @@
       }
     }
     & .cmp-navigation__group .cmp-navigation__item {
-      padding: 0.5625em 2em 0.6875em 1em;
       &:hover {
         background-color: $grey1;
         & a {
@@ -157,6 +159,9 @@
     display: block;
     color: $text-dark;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.5625em 2em 0.6875em 1em;
   }
   .cmp-navigation__item--active > .cmp-navigation__item-link {
   }
@@ -223,6 +228,7 @@
     border-radius: 0.25em;
     box-shadow: 0 0.25em 0.5em 0.2em $color-shadow;
     visibility: hidden;
+    opacity: 0;
   }
   .cmp-languagenavigation__item {
     height: 2.5rem;
@@ -233,7 +239,12 @@
     }
   }
   .cmp-languagenavigation__item-link {
-    margin: 0.5625em 0 0.6875em 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: inline-block;
+    padding-left: 50px;
+    padding-top: 10px;
     color: $text-dark;
     font-weight: normal;
     font-size: 1em;
@@ -264,6 +275,7 @@
 
   .cmp-languagenavigation__item--langcode-en {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -276,6 +288,7 @@
   }
   .cmp-languagenavigation__item--langcode-fr {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -288,6 +301,7 @@
   }
   .cmp-languagenavigation__item--langcode-de {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -300,6 +314,7 @@
   }
   .cmp-languagenavigation__item--langcode-it {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -312,6 +327,7 @@
   }
   .cmp-languagenavigation__item--langcode-ru {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -324,6 +340,7 @@
   }
   .cmp-languagenavigation__item--langcode-es {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -336,6 +353,7 @@
   }
   .cmp-languagenavigation__item--langcode-da {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -348,6 +366,7 @@
   }
   .cmp-languagenavigation__item--langcode-ga {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -360,6 +379,7 @@
   }
   .cmp-languagenavigation__item--langcode-pt {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -372,6 +392,7 @@
   }
   .cmp-languagenavigation__item--langcode-ro {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -384,6 +405,7 @@
   }
   .cmp-languagenavigation__item--langcode-sv {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -396,6 +418,7 @@
   }
   .cmp-languagenavigation__item--langcode-tr {
     &:before {
+      position: absolute;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -410,8 +433,11 @@
   //=================== Search ===================
 
   .search {
+    padding-left: 2em;
+    padding-right: 2em;
     @include lg {
-      margin-right: 0;
+      padding-left: 0.5em;
+      padding-right: 0;
     }
     @include sm {
       margin-left: 10%;
@@ -432,6 +458,7 @@
     border: 0.2rem solid $grey1;
     border-radius: 0.25em;
     width: 0;
+    transition: 0.5s;
     @include sm {
       padding-left: 30px;
       padding-right: 0;
