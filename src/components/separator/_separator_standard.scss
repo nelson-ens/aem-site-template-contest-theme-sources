@@ -5,5 +5,9 @@
     height: 0.125em;
     margin-top: 5em;
     margin-bottom: 2.5em;
+    @include sm {
+      margin-bottom: 1em;
+      margin-top: 2em;
+    }
   }
 }

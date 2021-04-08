@@ -1,6 +1,12 @@
 .caption {
   z-index: 1;
   position: relative;
+  @include md {
+    width: 33% !important;
+  }
+  @include sm {
+    width: 50% !important;
+  }
   .cmp-image {
     display: flex;
     justify-content: center;
@@ -28,7 +34,19 @@
     text-align: center;
     color: $color-background;
     font-family: $font-bold;
-    font-size: 1.75em;
-    line-height: 1.2em;
+    font-size: $text-large;
+    line-height: $text-height-medium;
+    @include lg {
+      font-size: $text-fixed-large;
+      line-height: $text-fixed-height-medium;
+    }
+    @include md {
+      font-size: $text-fixed-medium;
+      line-height: $text-fixed-height-medium;
+    }
+    @include sm {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
+    }
   }
 }

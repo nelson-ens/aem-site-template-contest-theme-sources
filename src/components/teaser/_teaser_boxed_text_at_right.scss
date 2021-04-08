@@ -1,8 +1,12 @@
 .boxedRightText {
+  @include lg {
+    width: 100% !important;
+    margin: 0;
+  }
   .cmp-teaser {
     position: static;
     display: flex;
-    margin: 0.75em 0.5em;
+    margin: 0.75em 0.75em 5em;
     border: 1px solid #dbdbdb;
     border-radius: $border-boxed-teaser;
     box-shadow: 0px 3px 6px #0000001a;
@@ -27,7 +31,7 @@
     left: 0;
     flex: 2;
     margin: 0;
-    padding: 0.75rem 1rem 0.75rem 0.75rem;
+    padding: 1rem;
     transform: none;
   }
   .cmp-teaser__pretitle {
@@ -41,13 +45,20 @@
   }
   .cmp-teaser__title {
     margin-top: 0;
-    margin-bottom: 0;
     color: $text-dark;
-    font-size: 1em;
+    font-size: $text-fixed-extra-large;
+    line-height: $text-fixed-height-medium;
     font-family: $font-bold;
-    line-height: 1.125rem;
     text-align: start;
     text-decoration: none;
+    @include md {
+      font-size: $text-fixed-large;
+      line-height: $text-fixed-height-large;
+    }
+    @include sm {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
+    }
   }
   .cmp-teaser__title-link {
     color: $text-dark;
@@ -58,12 +69,20 @@
   .cmp-teaser__description {
     color: $text-dark;
     font-weight: 300;
-    font-size: 0.75em;
-    line-height: 1.5em;
+    font-size: $text-fixed-large;
+    line-height: $text-fixed-height-large;
     text-align: start;
+    @include md {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
+    }
+    @include sm {
+      font-size: $text-fixed-extra-small;
+      line-height: $text-fixed-small;
+    }
 
     & p {
-      line-height: 1.5em;
+      line-height: $text-fixed-height-large;
     }
   }
   .cmp-teaser__action-container {
@@ -71,16 +90,22 @@
     justify-content: start;
     margin: 0;
     padding: 0;
-    font-size: 0.75em;
   }
   .cmp-teaser__action-link {
     margin-right: 0;
     padding: 0;
-    font-weight: 300;
     text-decoration: none;
     color: $color-accent;
     background-color: $transparent;
     border: none;
+    @include md {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
+    }
+    @include sm {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
+    }
 
     &:hover {
       color: $color-accent-hover;

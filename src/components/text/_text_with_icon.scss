@@ -1,4 +1,11 @@
 .textWithIcon {
+  @include sm {
+    font-size: $text-fixed-small;
+    line-height: $text-fixed-height-small;
+    .cmp-text {
+      margin: 0.25em;
+    }
+  }
   .cmp-text {
     & p {
       display: flex;
@@ -12,6 +19,7 @@
       background-size: contain;
       display: inline-block;
       width: 2em;
+      min-width: 2em;
       height: 2em;
       margin-right: 1em;
     }

@@ -1,4 +1,10 @@
 .captionBelow {
+  @include md {
+    width: 25% !important;
+  }
+  @include sm {
+    width: 50% !important;
+  }
   .cmp-image {
     display: flex;
     justify-content: center;
@@ -20,8 +26,20 @@
     margin-top: 8%;
     color: $text-dark;
     font-family: $font-bold;
-    font-size: 1.25em;
-    line-height: 1.2em;
+    font-size: $text-medium;
+    line-height: $text-height-medium;
     padding-bottom: 1em;
+    @include lg {
+      font-size: $text-fixed-medium;
+      line-height: $text-fixed-height-medium;
+    }
+    @include md {
+      font-size: $text-fixed-medium;
+      line-height: $text-fixed-height-medium;
+    }
+    @include sm {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
+    }
   }
 }

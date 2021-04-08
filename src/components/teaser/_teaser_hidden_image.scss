@@ -17,10 +17,18 @@
   }
   .cmp-teaser__title-link {
     line-height: 2rem;
+    @include sm {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
+    }
   }
   .cmp-teaser__description {
     line-height: 1em;
     padding-right: 25%;
+    @include sm {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
+    }
 
     & p {
       line-height: 1.5em;
