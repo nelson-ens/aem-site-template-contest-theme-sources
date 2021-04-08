@@ -1,4 +1,8 @@
 .textAtLeft {
+  @include md {
+    width: 100% !important;
+    margin: 0;
+  }
   .cmp-teaser {
     position: static;
     display: flex;
@@ -25,6 +29,9 @@
     margin: 0;
     padding: 1rem 0 1rem 0;
     transform: none;
+    @include md {
+      padding: 1rem 0 0 0;
+    }
   }
   .cmp-teaser__pretitle {
     color: $grey3;

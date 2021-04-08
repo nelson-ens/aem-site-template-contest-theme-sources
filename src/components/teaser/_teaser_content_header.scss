@@ -1,6 +1,7 @@
 .contentHeader {
   .cmp-teaser {
     position: relative;
+    margin: 0;
   }
   .cmp-teaser__image {
     & .cmp-image {
@@ -9,6 +10,9 @@
     & img {
       display: block;
       height: 20em;
+      @include sm {
+        height: 15em;
+      }
       object-fit: cover;
     }
   }
@@ -48,6 +52,10 @@
     line-height: 2.5rem;
     text-decoration: none;
     text-align: left;
+    @include sm {
+      font-size: $text-fixed-extra-large;
+      line-height: $text-fixed-height-large;
+    }
   }
   .cmp-teaser__title-link {
     color: $text-light;

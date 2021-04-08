@@ -1,8 +1,6 @@
-.caption {
-  z-index: 1;
-  position: relative;
+.captionBelow {
   @include md {
-    width: 33% !important;
+    width: 25% !important;
   }
   @include sm {
     width: 50% !important;
@@ -11,8 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    box-shadow: $image-shadow;
-    border-radius: $border-radius;
+    flex-direction: column;
   }
   .cmp-image__link {
     width: 100%;
@@ -21,23 +18,19 @@
     width: 100%;
     border-radius: $border-radius;
     border-style: none;
-    border-color: transparent;
-    z-index: -1;
-    position: relative;
   }
 
   .cmp-image__title {
     z-index: 1;
-    bottom: 15%;
-    position: absolute;
-    width: 80%;
-    text-align: center;
-    color: $color-background;
+    width: 100%;
+    margin-top: 8%;
+    color: $text-dark;
     font-family: $font-bold;
-    font-size: $text-large;
+    font-size: $text-medium;
     line-height: $text-height-medium;
+    padding-bottom: 1em;
     @include lg {
-      font-size: $text-fixed-large;
+      font-size: $text-fixed-medium;
       line-height: $text-fixed-height-medium;
     }
     @include md {

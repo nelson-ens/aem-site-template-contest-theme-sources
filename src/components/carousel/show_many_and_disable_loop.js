@@ -15,7 +15,8 @@ class Carousel {
   showImage(index) {
     var img = this.allImages[index];
     if (img == null) return;
-    img.style.display = "block";
+    img.style.display = "flex";
+    img.style["justify-content"] = "center";
   }
 
   hideImage(index) {

@@ -44,6 +44,10 @@
     margin-bottom: 3.125rem;
     text-align: center;
     text-decoration: none;
+    @include sm {
+      font-size: $text-fixed-extra-large;
+      line-height: $text-fixed-height-large;
+    }
   }
   .cmp-teaser__title-link {
     color: $text-light;
@@ -59,6 +63,10 @@
 
     & p {
       line-height: 1rem;
+    }
+    @include sm {
+      font-size: $text-fixed-small;
+      line-height: $text-fixed-height-small;
     }
   }
   .cmp-teaser__action-container {
