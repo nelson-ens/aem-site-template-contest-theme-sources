@@ -7,7 +7,7 @@ function hideDropDown() {
   }
   navGroup.style.visibility = "hidden";
   navGroup.style.opacity = "0";
-  navGroup.style.transition = "0";
+  navGroup.style.transition = "none";
   document.getElementsByClassName("cmp-languagenavigation")[0].style[
     "border-color"
   ] = null;
